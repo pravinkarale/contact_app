@@ -12,4 +12,18 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery-3.2.1.min
+//= require bootstrap/popper
+//= require bootstrap/popper.min
+//= require bootstrap/bootstrap
+//= require bootstrap/bootstrap.min
+//= require bootstrap/tooltip
+//= require animsition
+//= require animsition.min
+//= require countdowntime
+//= require daterangepicker
+//= require moment
+//= require moment.min
+//= require select2
+//= require select2.min
 //= require_tree .
