@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
   	resources :contacts, only: [:create]
   end
+  get '*unmatched_route', to: 'application#route_not_found'
 end

@@ -1,0 +1,19 @@
+<div>
+  <h1>
+    <%= @contact.full_name %> has sent you the message !!
+  </h1>
+  <p>
+    Below are the user details :- </br>
+    User Name : <%= @contact.full_name %> </br>
+    User Email : <%= @contact.email %> </br>
+    <% if @contact.phone.present? %>
+      User Phone : <%= @contact.phone %> 
+    <% end %>  
+    </br><br/>
+  </p>
+  <p>
+    Below is the message sent by <%= @contact.full_name %> </br></br>
+    <%= @contact.message %>
+  </p>
+  <p>Have a great day!</p>
+</div>    
