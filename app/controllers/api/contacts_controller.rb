@@ -1,11 +1,13 @@
 class Api::ContactsController < ApplicationController
+
   def create
+    I18n.locale = params[:contact][:locale].to_sym
     @contact = Contact.new(contact_params)
     if @contact.save
-      success_message = 'Message sent successfully'
+      success_message = t("validation.success")
       render json: { result: "success", status: "success", message: success_message }
     else
-      error_message = 'Please fill up all mandatory fields with valid format'
+      error_message = success_message = t("validation.error")
       render json: { result: "failure", status: "failure", message: error_message }
     end
   end

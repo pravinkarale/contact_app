@@ -13,5 +13,7 @@ module ContactApp
         ENV[key.to_s] = value
       end if File.exists?(env_file)
     end
+    config.i18n.available_locales = [:en, :es]
+    config.i18n.default_locale = :en
   end
 end

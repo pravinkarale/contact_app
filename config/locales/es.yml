@@ -1,0 +1,22 @@
+es:
+  validation:
+    error: "Complete todos los campos obligatorios con un formato válido."
+    success: "Mensaje enviado con éxito"
+  form_title: 'Mandanos un mensaje'
+  form_fields:
+    title: 
+      name: "DÍGANOS SU NOMBRE *"
+      email: "INTRODUCE TU CORREO ELECTRÓNICO *"
+      phone: "INGRESAR NÚMERO TELEFÓNICO"
+      message: "MENSAJE *"
+    place_holder:
+      first_name: "Nombre de pila"  
+      last_name: "Apellido"
+      email: "P.ej. example@email.com"
+      phone: "P.ej. +1 800 000000"
+      message: "Escríbenos un mensaje"  
+    submit_button: "ENVIAR MENSAJE"
+  contact_details:
+    address: "Dirección"
+    phone: "Hablemos"
+    email: "Apoyo general"

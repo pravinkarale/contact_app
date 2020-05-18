@@ -1,0 +1,12 @@
+$("#language_selector").html("<%= escape_javascript(render 'shared/language_select') %>");
+$("#contact_form").html("<%= escape_javascript(render 'contacts/form', contact: @contact) %>");
+
+$("select#language_select").on('change', function(){
+	var lang = $(this).val()
+	languageChangeAjaxCall(lang)
+})
+
+$("form#new_contact").on('submit', function(e){
+  e.preventDefault();
+  sendMessage()
+})

@@ -30,4 +30,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  validation:
+    error: "Please fill up all mandatory fields with valid format"
+    success: "Message sent successfully"
+  form_title: 'Send Us A Message'
+  form_fields:
+    title:
+      name: "TELL US YOUR NAME *"
+      email: "ENTER YOUR EMAIL *"
+      phone: "ENTER PHONE NUMBER"
+      message: "MESSAGE *"
+    place_holder:
+      first_name: "First name"
+      last_name: "Last name"
+      email: "Eg. example@email.com"
+      phone: "Eg. +1 800 000000"
+      message: "Write us a message"
+    submit_button: "SEND MESSAGE"
+  contact_details:
+    address: "Address"
+    phone: "Lets Talk"
+    email: "General Support"

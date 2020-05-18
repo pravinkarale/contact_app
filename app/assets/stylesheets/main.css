@@ -526,3 +526,10 @@ span.response_message.failure{
   color: #c80000;
 }
 
+.header {
+  padding: 20px;
+  text-align: right;
+  background: #00ad5f;
+  color: white;
+  font-size: 15px;
+}
