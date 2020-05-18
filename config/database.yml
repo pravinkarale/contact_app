@@ -3,8 +3,8 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   socket: /var/run/mysqld/mysqld.sock
-  username: 'root'
-  password: 'root'
+  username: <%= ENV['CONTACT_APP_DATABASE_USERNAME_DEV'] %>
+  password: <%= ENV['CONTACT_APP_DATABASE_PASSWORD_DEV'] %>
 
 development:
   <<: *default
@@ -17,5 +17,5 @@ test:
 production:
   <<: *default
   database: contact_app_production
-  username: <%= ENV['CONTACT_APP_DATABASE_USERNAME'] %>
-  password: <%= ENV['CONTACT_APP_DATABASE_PASSWORD'] %>
+  username: <%= ENV['CONTACT_APP_DATABASE_USERNAME_PROD'] %>
+  password: <%= ENV['CONTACT_APP_DATABASE_PASSWORD_PROD'] %>

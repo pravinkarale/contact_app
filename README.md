@@ -7,14 +7,21 @@ Things you may want to cover:
 
 * Ruby version :- 2.4.3
 
-* database :- mariadb
+* database :- mysql
 
-* System dependencies
-  - install libmariadbd-dev for mariadb to work
+* System dependencies :- 
 
 * Configuration
+  
+  - start delayed jobs by below command  
+		rake jobs:work
+
+	- rename file located at /config/local_env.yaml_example	to local_env.yaml and update with own configuration settings.  
 
 * Database creation
+	run below command to create database
+  rake db:create
+  rake db:migrate
 
 * Database initialization
 
